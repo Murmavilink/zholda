@@ -767,7 +767,8 @@
   }
 
   .nav {
-    display: none;
+    order: 3;
+    margin-left: 20px;
   }
 
   .header__area {
@@ -785,6 +786,12 @@
 
   .area-info__inner {
     min-height: 418px;
+  }
+
+  .nav-menu {
+    .nav-menu__link {
+      display: block;
+    }
   }
 
   ////////////////// media
@@ -969,6 +976,10 @@
     line-height: 21.6px;
   }
 
+  .nav-menu {
+    left: -50px;
+  }
+
   ////////////////// media
 }
 
@@ -1002,6 +1013,39 @@
 
 
   ////////////////// media
+  
+  .header__area {
+    .header__cont-logo {
+      margin-right: 10px;
+    }
+
+    .header__cont-login {
+      margin-left: 10px;
+    }
+  }
+
+  .nav-menu {
+    top: 40px;
+    left: -90px;
+  }
+
+  
+  .nav {
+    padding-right: 10px;
+    flex-shrink: 0;
+    margin-left: 10px;
+    column-gap: 0;
+
+    &__img {
+      display: none;
+    }
+
+    &__current {
+      font-size: 12px;
+    }
+
+  }
+   
   .cards__about-item {
     span {
       margin-bottom: 10px;
@@ -1302,6 +1346,7 @@
       font-size: 12px;
     }
   }
+
 
   ////////////////// media
 }
