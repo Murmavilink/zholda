@@ -32,6 +32,7 @@ function scripts() {
         './app/js/dropMenu.js',
         './app/js/tabs.js',
         './app/js/slider.js',
+        './app/js/toBook.js',
         './app/js/main.js'
         ])
         // .pipe(concat('main.min.js'))

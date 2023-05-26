@@ -1398,6 +1398,33 @@
     border-radius: 0px 16px 16px 16px;
   }
 
+  &__content-item-inner {
+    padding: 50px;
+    p, ul { 
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 180%;
+      color: #000000;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      margin-bottom: 0;
+      padding-left: 20px;
+      li {
+        list-style: disc;
+      }
+    }
+  }
+
+  &__content-item-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 180%;
+    margin-bottom: 20px;
+    color: #000;
+  }
+
   &__content-item--active {
     height: auto;
     opacity: 1;

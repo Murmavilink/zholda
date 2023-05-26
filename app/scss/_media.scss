@@ -1425,6 +1425,22 @@
     }
   }
 
+  .tabs__content-item-inner {
+    padding: 15px;
+
+    p, ul { 
+      font-size: 14px;
+    }
+  }
+
+  .cards__city-wrap {
+    margin-bottom: 25px;
+  }
+  
+  .cards__day-count {
+    padding: 2px;
+    font-size: 10px;
+  }
 
   ////////////////// media
 }
