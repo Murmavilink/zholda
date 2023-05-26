@@ -168,7 +168,6 @@
     }
     
     &__place-wrap {
-      justify-content: space-around;
       width: 100%;
     }
 
@@ -830,11 +829,6 @@
   ////////////////// media
 }
 
-@media screen and (max-width: 885px) {
-    .cards__place-wrap {
-      justify-content: flex-start;
-    }
-}
 
 @media screen and (max-width: 730px) {
   .popular__cont-items-item {
@@ -949,7 +943,6 @@
     }
 
     &__place-wrap {
-      justify-content: flex-start;
       margin-bottom: 10px;
     }
 
@@ -1045,10 +1038,6 @@
         font-size: 12px;
         line-height: 21.6px;
       }
-    }
-
-    &__place-wrap {
-      width: auto;
     }
 
   }

@@ -3,12 +3,16 @@ const toBook = () => {
     const modalParent = document.querySelector('.popups');
     const modal = document.querySelector('.popup__to-book');
 
+    const formatDate = (value) => {
+        return value < 10 ?  `0${value}`: value;
+    };
+
 
     const createObjdata = (element) => {
         const objDate = new Date();
         const idCompany = element.id;
         const dateDay = element.querySelector('.cards__day--active span + span').textContent;
-        const date = `${objDate.getFullYear()}-${objDate.getMonth() + 1}-${dateDay}`;
+        const date = `${objDate.getFullYear()}-${formatDate(objDate.getMonth() + 1)}-${formatDate(dateDay)}`;
         const checkboxItems = element.querySelectorAll('.cards__place-wrap--active input');
 
         let countCheckbox = 0;
@@ -25,10 +29,10 @@ const toBook = () => {
             count: countCheckbox
         };
 
-        document.querySelector('input[name=date]').value = data.date;
-        document.querySelector('input[name=data]').value = JSON.stringify(data);
+        document.querySelector('input[type=date]').value = data.date;
+        document.querySelector('input[type=hidden]').value = JSON.stringify(data);
 
-        console.log(data);
+        console.log(data.date);
     };
 
 

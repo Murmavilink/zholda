@@ -1087,7 +1087,7 @@
                 </svg>
             </div>
             <h2>Забронируйте место</h2>
-            <form class="popup__part-form select-city">
+            <form class="popup__toBook-form select-city">
                 <div class="select-city__cont-ser-sel">
                     <select class="select-city__cont-ser-from">
                         <option data-display="Выбрать город">Выбрать город</option>
@@ -1114,14 +1114,14 @@
                     </select>
                 </div>
 
-                <input type="text" name="date" placeholder="21.05.2023">
+                <input type="date" name="date">
                 <input type="text" name="fio" placeholder="ФИО">
                 <input type="text" name="phone" placeholder="Телефон" data-tel-input>
                 <input type="text" name="model" placeholder="Введите марку и модель авто">
                 <input type="text" name="count" placeholder="Количество машин ">
                 <input type="hidden" name="data">
 
-                <button class="yel-btn">
+                <button class="yel-btn" type="submit">
                     Бронировать
                 </button>
             </form>
