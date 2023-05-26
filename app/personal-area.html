@@ -187,6 +187,16 @@
             </div>
 
             <form class="area-info__schedule">
+                <div class="area-info__schedule-text">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 0H15V15H0V0Z" fill="#F8BF45"/>
+                    </svg>
+                    <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line y1="1" x2="10" y2="1" stroke="#737373"/>
+                    </svg>
+                    <span>Дата отъезда</span>
+                </div>
+
                 <div class="area-info__schedule-wrap">
                     <div class="area-info__schedule-item">
                         <div class="area-info__schedule-title">
@@ -286,7 +296,7 @@
                                     <input class="area-info__schedule-input-count" type="number" placeholder="0">
                                 </div>
                             </div>
-                            <div class="area-info__schedule-column">
+                            <div class="area-info__schedule-column area-info__schedule-column--active">
                                 <div class="area-info__schedule-column-day">
                                     <span>вс</span>
                                     <span>7</span>
@@ -508,7 +518,7 @@
                     </div>
                 </div>
 
-                <button class="yel-btn area-info__btn-edit" type="submit">
+                <button class="area-info__btn-edit" type="submit">
                     Редактировать
                 </button>
             </form>

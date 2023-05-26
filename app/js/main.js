@@ -1750,7 +1750,9 @@ $(document).ready(function () {
 	});
 
 
-	$('.popup-btn').click(function () {
+	$('.popup-btn').click(function (e) {
+		e.preventDefault();
+
 		let popup = $(this).attr('data-popup');
 
 		$('.popup__' + popup).addClass('act')

@@ -27,9 +27,11 @@ function images() {
 
 function scripts() {
     return src([
+        './app/js/jquery-3.7.0.min.js',
         './app/js/daySwitcher.js',
         './app/js/dropMenu.js',
         './app/js/tabs.js',
+        './app/js/slider.js',
         './app/js/main.js'
         ])
         // .pipe(concat('main.min.js'))

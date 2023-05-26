@@ -923,6 +923,8 @@
     }
   }
 
+
+
   &__about-inner {
     padding-left: 30px;
     padding-bottom: 40px;
@@ -954,6 +956,8 @@
     overflow: hidden;
   }
 
+  
+
   &__day {
     display: flex;
     flex-direction: column;
@@ -962,14 +966,7 @@
     cursor: pointer;
     flex-basis: 14%;
     flex-shrink: 0;
-  
-    &--active {
-      border-width: 1px 1px 0px 1px;
-      border-style: solid;
-      border-color: #F4F4F4;
-      background-color: #fff;
-      border-radius: 6px 6px 0px 0px;
-    }
+    position: relative;
 
     span {
       font-weight: 500;
@@ -977,10 +974,42 @@
       color: #343434;
     }
 
+    &--active {
+      border-width: 1px 1px 0px 1px;
+      border-style: solid;
+      border-color: #F4F4F4;
+      background-color: #fff;
+      border-radius: 6px 6px 0px 0px;
+      span {
+        color: #46AABE;
+      }
+    }
+
+    
+
     &.hidden {
       display: none;
     }
   }
+
+  &__day-count {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #F8BF45;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 180%;
+    color: #000;
+  }
+
+
 
   &__circle-arrow-right, &__circle-arrow-left {
     width: 40px;
@@ -1058,6 +1087,48 @@
     }
 
   }
+
+  &__city-wrap {
+    margin-bottom: 50px;
+  }
+
+  &__city-list {
+    display: flex;
+  }
+
+  &__city-item {
+    position: relative;
+    list-style: none;
+    padding-right: 25px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url('../images/arr.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 5px;
+      height: 9px;
+      right: 9.5px;
+      top: 8px;
+    }
+
+    &:last-child {
+      padding-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+
+  }
+
+  &__city-text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+  }
+
 }
 
 .cards__item {
@@ -1157,6 +1228,21 @@
     margin-bottom: 40px;
   }
 
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 180%;
+    color: #000;
+  }
+
+  &__bottom-inner {
+    min-height: 68px;
+
+    .about-company__wrap {
+      display: none;
+    }
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -1210,6 +1296,63 @@
     line-height: 25.2px;
     color: #000000;
   }
+
+  &__text {
+    display: block;
+    font-size: 16px;
+    line-height: 180%;
+    color: #000;
+    background-color:#F8BF45;
+    padding: 12px 0;
+    width: 100%;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    right: 0;
+    span {
+      display: block;
+      width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  &__slider-wrap {
+    position: relative;
+  }
+
+  &__slider {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    column-gap: 10px;
+    border-bottom: 1px solid #F4F4F4;
+  }
+
+  &__slider-img {
+    width: 82px;
+    height: 82px;
+    object-fit: cover;
+  }
+
+  &__arrow {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    z-index: 10;
+    &.prev {
+      left: -30px;
+    }
+    
+    &.next {
+      right: -30px;
+    }
+
+  }
+
 
 }
 
@@ -1387,6 +1530,11 @@
   &__schedule-column {
     display: flex;
     flex-direction: column;
+  }
+
+  &__schedule-column--active .area-info__schedule-column-day {
+    background-color: #F8BF45;
+    color: #000;
   }
 
   &__schedule-column.hidden {
@@ -1570,8 +1718,33 @@
     justify-content: center;
 }
 
+&__schedule-text {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  position: absolute;
+  top: 22%;
+  right: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
 &__btn-edit {
   margin-left: auto;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #737373;
+  border-radius: 6px;
+  border: none;
+  padding: 15px 35px;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: #3d3d3d;
+  }
+
 }
 
 }
@@ -1718,7 +1891,30 @@
 
 }
 
+.select-city {
+  &__cont-ser-sel {
+    width: 100%;
+    & + & {
+      margin-top: 20px;
+    } 
+  }
 
+  .nice-select {
+    width: 100%;
+    border: 1px solid #E9E8E3;
+    border-radius: 6px;
+    &::after {
+      right: 20px;
+      top: 40%;
+    }
+
+    .current {
+      color: #737373;
+      font-weight: 500;
+    }
+
+  }
+}
 
 
 
