@@ -128,77 +128,75 @@
         </div>
     </header>
 
-    <div class="top-content">
-        <div class="wrapper">
-            <div class="breadcrumbs">
-                <ul class="breadcrumbs__list">
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="index.html">
-                            Главная
-                        </a>
+    <div class="top-content wrapper">
+        <div class="breadcrumbs">
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="index.html">
+                        Главная
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">
+                        Поиск
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="top-content__wrap">
+            <div class="breadcrumbs-city">
+                <ul class="breadcrumbs-city__list">
+                    <li class="breadcrumbs-city__item">
+                        <span class="breadcrumbs-city__text">
+                            Астана
+                        </span>
                     </li>
-                    <li class="breadcrumbs__item">
-                        <a class="breadcrumbs__link" href="#">
-                            Поиск
-                        </a>
+                    <li class="breadcrumbs-city__item">
+                        <span class="breadcrumbs-city__text">
+                            Шымкент
+                        </span>
                     </li>
                 </ul>
             </div>
 
-            <div class="top-content__wrap">
-                <div class="breadcrumbs-city">
-                    <ul class="breadcrumbs-city__list">
-                        <li class="breadcrumbs-city__item">
-                            <span class="breadcrumbs-city__text">
-                                Астана
-                            </span>
-                        </li>
-                        <li class="breadcrumbs-city__item">
-                            <span class="breadcrumbs-city__text">
-                                Шымкент
-                            </span>
-                        </li>
-                    </ul>
+
+            <form class="search-city">
+                <div class="search-city__cont-ser-sel">
+                    <p>Откуда</p>
+                    <select class="search-city__cont-ser-from">
+                        <option data-display="Выбрать город">Выбрать город</option>
+                        <option value="1" selected>Астана</option>
+                        <option value="2">Алматы</option>
+                        <option value="3">Павлодар</option>
+                        <option value="4">Экибастуз</option>
+                        <option value="5">Шымкент</option>
+                        <option value="6">Петропавловск</option>
+                        <option value="7">Усть-Каменогорск</option>
+                    </select>
                 </div>
-
-
-                <form class="search-city">
-                    <div class="search-city__cont-ser-sel">
-                        <p>Откуда</p>
-                        <select class="search-city__cont-ser-from">
-                            <option data-display="Выбрать город">Выбрать город</option>
-                            <option value="1" selected>Астана</option>
-                            <option value="2">Алматы</option>
-                            <option value="3">Павлодар</option>
-                            <option value="4">Экибастуз</option>
-                            <option value="5">Шымкент</option>
-                            <option value="6">Петропавловск</option>
-                            <option value="7">Усть-Каменогорск</option>
-                        </select>
-                    </div>
-                    <div class="vertical-line"></div>
-                    <div class="search-city__cont-ser-sel">
-                        <p>Куда</p>
-                        <select class="search-city__cont-ser-where">
-                            <option data-display="Выбрать город">Выбрать город</option>
-                            <option value="1" selected>Астана</option>
-                            <option value="2">Алматы</option>
-                            <option value="3">Павлодар</option>
-                            <option value="4">Экибастуз</option>
-                            <option value="5">Шымкент</option>
-                            <option value="6">Петропавловск</option>
-                            <option value="7">Усть-Каменогорск</option>
-                        </select>
-                    </div>
-                    <button class="yel-btn" type="submit">
-                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M12.9999 13L10.0999 10.1M11.6667 6.33333C11.6667 9.27884 9.27884 11.6667 6.33333 11.6667C3.38781 11.6667 1 9.27884 1 6.33333C1 3.38781 3.38781 1 6.33333 1C9.27884 1 11.6667 3.38781 11.6667 6.33333Z"
-                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                </form>
-            </div>
+                <div class="vertical-line"></div>
+                <div class="search-city__cont-ser-sel">
+                    <p>Куда</p>
+                    <select class="search-city__cont-ser-where">
+                        <option data-display="Выбрать город">Выбрать город</option>
+                        <option value="1" selected>Астана</option>
+                        <option value="2">Алматы</option>
+                        <option value="3">Павлодар</option>
+                        <option value="4">Экибастуз</option>
+                        <option value="5">Шымкент</option>
+                        <option value="6">Петропавловск</option>
+                        <option value="7">Усть-Каменогорск</option>
+                    </select>
+                </div>
+                <button class="yel-btn" type="submit">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12.9999 13L10.0999 10.1M11.6667 6.33333C11.6667 9.27884 9.27884 11.6667 6.33333 11.6667C3.38781 11.6667 1 9.27884 1 6.33333C1 3.38781 3.38781 1 6.33333 1C9.27884 1 11.6667 3.38781 11.6667 6.33333Z"
+                            stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </form>
         </div>
     </div>
 
