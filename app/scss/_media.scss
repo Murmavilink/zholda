@@ -174,7 +174,7 @@
   }
 
   .area-info__inner {
-    min-height: 460px;
+    padding-bottom: 70px;
   }
 
   .area-info__schedule {
@@ -183,7 +183,7 @@
 
   .area-info__btn-edit {
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     right: 0;
   }
 
@@ -762,6 +762,7 @@
     &__about-item {
       margin-left: 70px;
       flex-direction: column;
+      align-items: flex-start;
     }
 
     &__about-item-tel {
@@ -802,11 +803,6 @@
 
   .area-info__title {
     font-size: 16px;
-    line-height: 21.6px;
-  }
-
-  .area-info__inner {
-    min-height: 418px;
   }
 
   .nav-menu {
@@ -825,6 +821,10 @@
         margin-top: 10px;
       } 
     }
+  }
+
+  .area-info__inner {
+    padding-bottom: 70px;
   }
   ////////////////// media
 }
@@ -862,7 +862,7 @@
 
   .cards__type-info-item,
   .about-company__type-info-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid #F4F4F4;
 
@@ -951,7 +951,6 @@
 
       span {
         font-size: 12px;
-        line-height: 21.6px;
       }
     }
 
@@ -968,8 +967,11 @@
     }
 
     &__place-btn {
-      padding: 15px 24px;
+      padding: 11px 24px;
       margin-right: 0;
+      span {
+        font-size: 12px;
+      }
     }
 
   }
@@ -1036,7 +1038,6 @@
 
       span {
         font-size: 12px;
-        line-height: 21.6px;
       }
     }
 
@@ -1177,7 +1178,6 @@
 
     &__title {
       font-size: 12px;
-      line-height: 21.6px;
     }
 
     &__top-inner {
@@ -1196,7 +1196,6 @@
 
   .tabs__top-btn {
     font-size: 12px;
-    line-height: 21.6px;
   }
 
   .tabs {
@@ -1238,10 +1237,6 @@
   .area-info {
     padding-top: 30px;
     margin-right: 11px;
-
-    &__inner {
-      min-height: 350px;
-    }
 
     &__top-info {
       column-gap: 20px;
@@ -1429,6 +1424,10 @@
   .cards__day-count {
     padding: 2px;
     font-size: 10px;
+  }
+
+  .about-company__slider {
+    margin-bottom: 30px;
   }
 
   ////////////////// media
