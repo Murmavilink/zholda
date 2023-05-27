@@ -169,7 +169,7 @@
                 </li>
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link" href="#">
-                        Цены
+                        Профиль
                     </a>
                 </li>
             </ul>
@@ -178,7 +178,44 @@
 
 
     <main class="main wrapper">
-        
+        <div class="profile">
+            <form class="profile__form">
+
+                <div class="profile__form-wrap">
+                    <div class="profile__img-wrap">
+                        <img class="profile__img image-circle" src="./images/logo-compony.jpg" alt="логотип">
+                        <label class="profile__img-label">Изменить фото
+                            <input class="profile__img-input" type="file">
+                        </label>
+                    </div>
+
+                    <div class="profile__form-inner">
+                        <label class="profile__form-label">
+                            <span>Название компании:</span> 
+                            <input class="profile__form-control profile__form-name" type="text" value="ТОО “Элегант Транспорт Компани”">
+                        </label>
+    
+                        <label class="profile__form-label">
+                            <span>О компании</span>
+                            <textarea class="profile__form-control profile__form-textarea">ТОО “Элегант Транспорт Компани”</textarea>
+                        </label>
+    
+                        <label class="profile__form-label">
+                            <span>Номер телефона:</span>
+                            <input class="profile__form-control profile__form-tel" type="text" value="+7 (777) 111-11-77|">
+                        </label>
+    
+                        <label class="profile__form-label">
+                            <span>WhatsApp</span>
+                            <input class="profile__form-control profile__form-tel" type="text" value="+7 (777) 111-11-77|">
+                        </label>
+                    </div>
+                  
+               </div>
+              
+                <button class="profile__form-btn yel-btn" type="submit">Сохранить</button>
+            </form>
+        </div>
     </main>
 
 
@@ -397,6 +434,7 @@
     <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
     <!-- <script src="	" type="text/javascript"></script> -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="./js/dropMenu.js"></script>
     <script src="./js/main.js"></script>
 
 
