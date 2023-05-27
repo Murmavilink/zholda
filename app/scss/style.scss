@@ -1955,6 +1955,7 @@
   }
 
   &__item {
+    word-break: break-all;
     &:nth-child(1) {
       flex-basis: 123px;
     }
