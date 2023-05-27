@@ -1989,7 +1989,7 @@
     flex-shrink: 0;
     font-weight: 500;
     font-size: 12px;
-    line-height: 21.6px;
+    line-height: 180%;
     color: #fff;
   }
 
@@ -2003,7 +2003,7 @@
     time {
       font-weight: 500;
       font-size: 14px;
-      line-height: 25.2px;
+      line-height: 180%;
       color: #000000;
     }
 
@@ -2011,7 +2011,6 @@
       span {
         position: relative;
         flex-shrink: 0;
-
 
         &:nth-child(1) {
           padding-right: 15px;
@@ -2048,7 +2047,6 @@
   }
 
   &__content-item {
-
     .entries__content-item-succes,
     .entries__content-item-warning,
     .entries__content-item-secondary {
@@ -2265,20 +2263,19 @@
 
 
 
-.profile {
+.profile-form {
   padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  row-gap: 30px;
 
-  &__form {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    column-gap: 10px;
-    row-gap: 30px;
-  }
 
-  &__form-wrap {
-    width: 100%;
+  &__wrap {
+    @media (max-width: 530px) {
+      width: 100%;
+    }
   }
 
   &__img-wrap {
@@ -2308,7 +2305,7 @@
     z-index: -1;
   }
 
-  &__form-inner {
+  &__inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2320,7 +2317,7 @@
       }
   }
 
-  &__form-label {
+  &__label {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -2347,7 +2344,7 @@
     }
   }
 
-  &__form-control {
+  &__control {
     padding: 15px;
     font-weight: 500;
     font-size: 14px;
@@ -2357,25 +2354,25 @@
     margin-right: auto;
   }
 
-  &__form-name {
+  &__name {
     max-width: 277px;
     width: 100%;
   }
 
-  &__form-textarea {
+  &__textarea {
     max-width: 346px;
     width: 100%;
     min-height: 111px;
     resize: none;
   }
 
-  &__form-tel {
+  &__tel {
     max-width: 157px;
     width: 100%;
   }
 
-  &__form-btn {
-      margin-left: auto;
+  &__btn {
+    margin-left: auto;
   }
 
 
