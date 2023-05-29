@@ -31,8 +31,6 @@ const toBook = () => {
 
         document.querySelector('input[type=date]').value = data.date;
         document.querySelector('input[type=hidden]').value = JSON.stringify(data);
-
-        console.log(data.date);
     };
 
 
